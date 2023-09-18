@@ -1,0 +1,95 @@
+"C:\Program Files\Java\jdk-20\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2\lib\idea_rt.jar=55046:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\JavaProjects\JavaDev\module9\hw9\target\classes;C:\Users\admin\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\admin\.m2\repository\com\mysql\mysql-connector-j\8.1.0\mysql-connector-j-8.1.0.jar;C:\Users\admin\.m2\repository\com\google\protobuf\protobuf-java\3.21.9\protobuf-java-3.21.9.jar;C:\Users\admin\.m2\repository\org\hibernate\orm\hibernate-core\6.3.0.Final\hibernate-core-6.3.0.Final.jar;C:\Users\admin\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\admin\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\admin\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\admin\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\admin\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\admin\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\admin\.m2\repository\net\bytebuddy\byte-buddy\1.14.7\byte-buddy-1.14.7.jar;C:\Users\admin\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\admin\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar;C:\Users\admin\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.2\jaxb-runtime-4.0.2.jar;C:\Users\admin\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.2\jaxb-core-4.0.2.jar;C:\Users\admin\.m2\repository\org\eclipse\angus\angus-activation\2.0.0\angus-activation-2.0.0.jar;C:\Users\admin\.m2\repository\org\glassfish\jaxb\txw2\4.0.2\txw2-4.0.2.jar;C:\Users\admin\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.1\istack-commons-runtime-4.1.1.jar;C:\Users\admin\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\admin\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\admin\.m2\repository\org\hibernate\hibernate-entitymanager\5.6.15.Final\hibernate-entitymanager-5.6.15.Final.jar;C:\Users\admin\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\admin\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar org.example.App
+2023-09-18 23:16:00 [thread_id="mainid"] () start application
+2023-09-18 23:16:01 [thread_id="mainid"] () HHH000204: Processing PersistenceUnitInfo [name: osbbPersistenceUnit]
+2023-09-18 23:16:01 [thread_id="mainid"] () HHH000412: Hibernate ORM core version 6.3.0.Final
+2023-09-18 23:16:01 [thread_id="mainid"] () HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.user], use [jakarta.persistence.jdbc.user] instead
+2023-09-18 23:16:01 [thread_id="mainid"] () HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.password], use [jakarta.persistence.jdbc.password] instead
+2023-09-18 23:16:01 [thread_id="mainid"] () HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.url], use [jakarta.persistence.jdbc.url] instead
+2023-09-18 23:16:01 [thread_id="mainid"] () HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.driver], use [jakarta.persistence.jdbc.driver] instead
+2023-09-18 23:16:01 [thread_id="mainid"] () HHH000026: Second-level cache disabled
+2023-09-18 23:16:01 [thread_id="mainid"] () HHH10001002: Using built-in connection pool (not intended for production use)
+2023-09-18 23:16:01 [thread_id="mainid"] () HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2023-09-18 23:16:01 [thread_id="mainid"] () HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/osbb]
+2023-09-18 23:16:01 [thread_id="mainid"] () HHH10001001: Connection properties: {password=****, user=root}
+2023-09-18 23:16:01 [thread_id="mainid"] () HHH10001003: Autocommit mode: false
+2023-09-18 23:16:01 [thread_id="mainid"] () HHH10001115: Connection pool size: 20 (min=1)
+2023-09-18 23:16:04 [thread_id="mainid"] () HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-09-18 23:16:04 [thread_id="mainid"] () HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@33d7765a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Hibernate:
+    select
+        m1_0.fullName,
+        m1_0.email,
+        b1_0.address,
+        a1_0.square,
+        a1_0.number
+    from
+        Member m1_0
+    join
+        Apartment a1_0
+            on m1_0.id=a1_0.member_id
+    join
+        Building b1_0
+            on b1_0.id=a1_0.building_id
+    left join
+        Resident r1_0
+            on r1_0.id=m1_0.resident_id
+    where
+        r1_0.enterCar=?
+        and m1_0.resident_id is not null
+    group by
+        1,
+        2,
+        3,
+        4,
+        5
+    having
+        count(a1_0.id)<?
+Горобець Євлампій Остапович, box31@gmail.com, вул. Б.Хмельницького, 50, 37.3, 31
+Козачинський Христофор Драганович, box27@gmail.com, вул. Б.Хмельницького, 50, 78.6, 27
+Калинець Щедрогост Остапович, box25@gmail.com, вул. Б.Хмельницького, 50, 78.2, 25
+Полетика Пилип Федорович, box24@gmail.com, вул. Б.Хмельницького, 50, 37.1, 24
+Жупан Ладимир Жданович, box23@gmail.com, вул. Б.Хмельницького, 50, 54.9, 23
+Тарнавський Царук Никодимович, box20@gmail.com, вул. Б.Хмельницького, 50, 108.3, 20
+Воєвода Юліан Бажанович, box18@gmail.com, вул. Б.Хмельницького, 50, 36.3, 18
+Швець Есфір Юхимович, box17@gmail.com, вул. Б.Хмельницького, 50, 36.9, 17
+Шандрук Шаміль Глібович, box14@gmail.com, вул. Б.Хмельницького, 50, 34.6, 14
+Мартиновський Шерлок Августинович, box13@gmail.com, вул. Б.Хмельницького, 50, 55.2, 13
+Мицик Яровид Златович, box9@gmail.com, вул. Б.Хмельницького, 50, 74.9, 9
+Авдуєвський Тімох Федорович, box7@gmail.com, вул. Б.Хмельницького, 50, 80.5, 7
+Шаніна Ірина Олександрівна, box2@gmail.com, вул. Б.Хмельницького, 50, 38.8, 2
+Потушняк Ус Макарович, box65@gmail.com, вул. Б.Хмельницького, 52, 38.8, 32
+Гопко Щастислав Янович, box63@gmail.com, вул. Б.Хмельницького, 52, 35.5, 30
+Ратушняк Єгор Мстиславович, box62@gmail.com, вул. Б.Хмельницького, 52, 101.5, 29
+Кивелюк Шарль Милославович, box61@gmail.com, вул. Б.Хмельницького, 52, 50.4, 28
+Ванченко Данило Денисович, box58@gmail.com, вул. Б.Хмельницького, 52, 34.0, 25
+Стебельський Йоханес Ратиборович, box57@gmail.com, вул. Б.Хмельницького, 52, 83.0, 24
+Шулежко Гервасій Зорянович, box56@gmail.com, вул. Б.Хмельницького, 52, 38.8, 23
+Луцишин Йошка Янович, box55@gmail.com, вул. Б.Хмельницького, 52, 68.7, 22
+Чарниш Мстислав Тарасович, box54@gmail.com, вул. Б.Хмельницького, 52, 95.6, 21
+Шанковський Полян Сарматович, box53@gmail.com, вул. Б.Хмельницького, 52, 74.1, 20
+Паторжинський Перелюб Валентинович, box52@gmail.com, вул. Б.Хмельницького, 52, 34.1, 19
+Грибовський Йосеф Августинович, box48@gmail.com, вул. Б.Хмельницького, 52, 66.5, 15
+Добряк Гнат Охримович, box45@gmail.com, вул. Б.Хмельницького, 52, 70.5, 12
+Тиханович Радило Вікторович, box38@gmail.com, вул. Б.Хмельницького, 52, 70.1, 5
+Шаніна Ірина Олександрівна, box2@gmail.com, вул. Б.Хмельницького, 52, 38.1, 2
+Омельчук Йомер Августинович, box99@gmail.com, вул. Б.Хмельницького, 54, 106.9, 33
+Чех Шаміль Герасимович, box97@gmail.com, вул. Б.Хмельницького, 54, 100.8, 31
+Бойчук Велемудр Полянович, box95@gmail.com, вул. Б.Хмельницького, 54, 78.3, 29
+Іванець Євстафій Борисович, box93@gmail.com, вул. Б.Хмельницького, 54, 34.2, 27
+Якубовський Онуфрій Сарматович, box90@gmail.com, вул. Б.Хмельницького, 54, 83.3, 24
+Борушенко Йонас Артемович, box87@gmail.com, вул. Б.Хмельницького, 54, 35.8, 21
+Бенч Лоліт Герасимович, box81@gmail.com, вул. Б.Хмельницького, 54, 50.8, 15
+Гурко Звенимир Ігорович, box80@gmail.com, вул. Б.Хмельницького, 54, 57.4, 14
+Середюк Едуард Володимирович, box79@gmail.com, вул. Б.Хмельницького, 54, 55.4, 13
+Іваничук Чернин Артурович, box78@gmail.com, вул. Б.Хмельницького, 54, 84.8, 12
+Богуцький Красун Соломонович, box76@gmail.com, вул. Б.Хмельницького, 54, 82.7, 10
+Остапчук Жадан Іванович, box75@gmail.com, вул. Б.Хмельницького, 54, 75.0, 9
+Долиняк Худан Соломонович, box74@gmail.com, вул. Б.Хмельницького, 54, 59.1, 8
+Доленко Турбог Драганович, box72@gmail.com, вул. Б.Хмельницького, 54, 37.7, 6
+Костенецький Еммануїл Тарасович, box71@gmail.com, вул. Б.Хмельницького, 54, 110.7, 5
+Чаплич Панас Борисович, box70@gmail.com, вул. Б.Хмельницького, 54, 33.4, 4
+Трофименко Милодух Артурович, box67@gmail.com, вул. Б.Хмельницького, 54, 50.9, 1
+2023-09-18 23:16:04 [thread_id="mainid"] () HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/osbb]
+2023-09-18 23:16:04 [thread_id="mainid"] () stop application
+
+Process finished with exit code 0

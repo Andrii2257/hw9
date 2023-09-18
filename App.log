@@ -1,0 +1,18 @@
+2023-09-18 23:16:00 INFO  App:19 - start application
+2023-09-18 23:16:01 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: osbbPersistenceUnit]
+2023-09-18 23:16:01 INFO  Version:44 - HHH000412: Hibernate ORM core version 6.3.0.Final
+2023-09-18 23:16:01 WARN  deprecation:714 - HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.user], use [jakarta.persistence.jdbc.user] instead
+2023-09-18 23:16:01 WARN  deprecation:736 - HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.password], use [jakarta.persistence.jdbc.password] instead
+2023-09-18 23:16:01 WARN  deprecation:1051 - HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.url], use [jakarta.persistence.jdbc.url] instead
+2023-09-18 23:16:01 WARN  deprecation:1058 - HHH90000021: Encountered deprecated setting [javax.persistence.jdbc.driver], use [jakarta.persistence.jdbc.driver] instead
+2023-09-18 23:16:01 INFO  RegionFactoryInitiator:50 - HHH000026: Second-level cache disabled
+2023-09-18 23:16:01 WARN  pooling:80 - HHH10001002: Using built-in connection pool (not intended for production use)
+2023-09-18 23:16:01 INFO  pooling:135 - HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+2023-09-18 23:16:01 INFO  pooling:157 - HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/osbb]
+2023-09-18 23:16:01 INFO  pooling:166 - HHH10001001: Connection properties: {password=****, user=root}
+2023-09-18 23:16:01 INFO  pooling:170 - HHH10001003: Autocommit mode: false
+2023-09-18 23:16:01 INFO  pooling:362 - HHH10001115: Connection pool size: 20 (min=1)
+2023-09-18 23:16:04 INFO  JtaPlatformInitiator:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-09-18 23:16:04 INFO  access:52 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@33d7765a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2023-09-18 23:16:04 INFO  pooling:604 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/osbb]
+2023-09-18 23:16:04 INFO  App:27 - stop application
