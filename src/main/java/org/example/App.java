@@ -31,17 +31,6 @@ public class App {
         CriteriaBuilder criteriaBuilder = em.getCriteriaBuilder();
         CriteriaQuery<Object[]> criteriaQuery = criteriaBuilder.createQuery(Object[].class);
 
-        /*
-        select m.fullname, m.email, b.address, a.square, a.number
-        from member as m
-        join apartment as a on m.id = a.member_id
-        left join resident as r on m.resident_id = r.id
-        join building as b on a.building_id = b.id
-        where r.entercar = false and r.id is not null
-        group by m.fullname, m.email, b.address, a.square, a.number
-        having count(a.id) < 2;
-        */
-
         Root<Member> memberRoot = criteriaQuery.from(Member.class);
         Join<Member, Apartment> apartmentJoin = memberRoot.join("apartments");
         Join<Member, Resident> residentJoin = memberRoot.join("resident", JoinType.LEFT);
