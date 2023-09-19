@@ -16,10 +16,6 @@ public class Resident {
     @OneToOne(mappedBy = "resident", cascade = CascadeType.ALL)
     private Member member;
 
-
-    public Resident() {
-    }
-
     public int getId() {
         return id;
     }

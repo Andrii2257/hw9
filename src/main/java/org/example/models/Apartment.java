@@ -22,9 +22,6 @@ public class Apartment {
     @OneToMany(mappedBy = "apartment", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     List<Resident> residents = new ArrayList<>();
 
-    public Apartment() {
-    }
-
     public int getId() {
         return id;
     }

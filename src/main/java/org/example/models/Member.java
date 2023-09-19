@@ -26,9 +26,6 @@ public class Member {
     @JoinColumn(name = "resident_id")
     private Resident resident;
 
-    public Member() {
-    }
-
     public int getId() {
         return id;
     }
